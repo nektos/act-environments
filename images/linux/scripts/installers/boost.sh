@@ -3,7 +3,8 @@
 ##  File:  boost.sh
 ##  Desc:  Installs Boost C++ Libraries
 ################################################################################
-
+echo "Boost is DISABLED!"
+exit
 # Source the helpers for use with the script
 source $HELPER_SCRIPTS/document.sh
 
