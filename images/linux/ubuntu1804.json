@@ -25,7 +25,7 @@
     "post-processors": [
       {
         "type": "docker-tag",
-        "repository": "github-actions-ubuntu",
+        "repository": "nektos/act-environments-ubuntu",
         "tag": "18.04"
       }
     ],
@@ -34,7 +34,7 @@
             "type": "shell",
             "inline": [
                 "apt-get update",
-                "apt-get -y install sudo lsb-core software-properties-common",
+                "apt-get -y install sudo lsb-core software-properties-common apt-utils",
                 "add-apt-repository 'deb http://security.ubuntu.com/ubuntu xenial-security main'"
             ],
             "execute_command": "sh -c '{{ .Vars }} {{ .Path }}'"
